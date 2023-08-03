@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  /* background-color: black; */
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #7f56d9;
+  justify-content: center;
+  min-width: 140px;
+
+
+
+}
+
+.selector .MuiOutlinedInput-root {
+  /* Use your desired border color or set it to 'none' to remove the outline */
+  border-color: red !important;
+  /* Replace 'red' with your desired color */
+  /* Add other styles if needed */
+  border: none !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+  /* border-bottom: 2px solid black !important; */
+  /* border: none !important; */
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+  /* background-color: black !important; */
+}
+
+.Link {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+@media (max-width: 690px) {
+  .dropdown {
+
+    width: 100%;
+  }
+}
+
+
+
+
+
+.draw-border {
+  /* box-shadow: inset 0 0 0 2px #000000; */
+  color: #fff;
+  position: relative;
+  border-radius: 0;
+
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 0;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+
+  &:hover {
+
+    &::before,
+    &::after {
+      border-color: #7f56d9;
+      transition: border-color 0s, width 0.25s, height 0.25s;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      transition-delay: 0s, 0s, 0.25s;
+    }
+
+    &::after {
+      transition-delay: 0.5s, 0.5s, 0.75s;
+    }
+  }
+}
+
+/* Button styling */
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}

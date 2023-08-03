@@ -1,0 +1,26 @@
+.houselist-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 40px;
+
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.no-data-found {
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(161, 160, 160);
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

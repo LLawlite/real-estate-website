@@ -1,0 +1,12 @@
+.footer-container {
+    margin-top: 20px;
+    background-color: black;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-weight: 600;
+    gap: 10px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(127, 86, 217, 1) 0%, rgba(235, 235, 255, 1) 0%, rgba(170, 196, 255, 1) 29%, rgba(235, 225, 255, 1) 46%, rgba(246, 191, 255, 1) 89%, rgba(225, 250, 255, 1) 100%, rgba(7, 66, 159, 1) 100%);
+}
